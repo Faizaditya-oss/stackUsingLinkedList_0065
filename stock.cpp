@@ -76,5 +76,16 @@ bool isEmpty()
 }
 };
 
+int main()
+{
+    Stack stack;
 
+    int choice = 0;
+    int value;
+
+    while (choice != 5)
+    {
+        
+    }
+}
 
