@@ -6,5 +6,15 @@ class Node
 {
 public : 
     int data;
-    
+    Node *next;
+
+    Node()
+    {
+        next = NULL;    }
+}
+
+// Stack class
+class Stack
+{
+private :
 }
