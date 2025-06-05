@@ -11,7 +11,7 @@ public :
     Node()
     {
         next = NULL;    }
-}
+};
 
 // Stack class
 class Stack
@@ -22,7 +22,7 @@ private :
 public :
    Stack()
    {
-    top * NULL; // Initialize the stack with a null top
+    top = NULL; // Initialize the stack with a null top
    }
 
    // Push operation: Insert on element onto the top of the
@@ -34,4 +34,20 @@ public :
     cout << "Push value: " << value << endl;
     return value;
    }
+};
+
+// Pop operation :
+void pop()
+{
+    Node *temp = top;
+    if (isEmpty())
+    {
+        cout << "Stack is empty." << endl;
+        return;
+    }
+
+
+    cout << "Popped value: " << temp->data << endl;
+    top = temp->next;
+    delete temp;
 }
