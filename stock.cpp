@@ -99,6 +99,10 @@ int main()
                cin >> value;
                stack.push(value); // Push the entered value
 
+        case 2:
+               stack.pop();
+               break;
+        
         
         }
 
