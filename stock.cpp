@@ -34,7 +34,7 @@ public :
     cout << "Push value: " << value << endl;
     return value;
    }
-};
+
 
 // Pop operation :
 void pop()
@@ -67,5 +67,14 @@ void peek()
             cout << current->data << " " << endl;
             current = current->next;
         }
+        cout << endl;
     }
 }
+bool isEmpty()
+{
+    return top == NULL; // Return true if the top pointer
+}
+};
+
+
+
